@@ -2,11 +2,13 @@
   "name": "learn-vue",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://nickb6437.github.io/learn-vue",
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "backend": "json-server --watch db.json --port 5000",
-    "lint": "vue-cli-service lint"
+    "lint": "vue-cli-service lint",
+    "deploy": "node scripts/gh-pages-deploy.js"
   },
   "dependencies": {
     "core-js": "^3.6.5",
@@ -15,6 +17,7 @@
     "vue-router": "^4.0.11"
   },
   "devDependencies": {
+    "execa": "latest",
     "@vue/cli-plugin-babel": "~4.5.0",
     "@vue/cli-plugin-eslint": "~4.5.0",
     "@vue/cli-service": "~4.5.0",
